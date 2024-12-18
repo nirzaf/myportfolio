@@ -37,9 +37,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Mohamed Farook Mohamed Fazrin",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "nirzaf@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -74,6 +74,26 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className='mt-4 text-secondary text-[17px]'>
+          <p>Location: Al Sadd, Doha, Qatar</p>
+          <p>Mobile: +97433253203</p>
+          <p>Phone: +94772049123</p>
+          <p>Email: nirzaf@gmail.com</p>
+          <div className='mt-4'>
+            <a href="https://github.com/nirzaf" target="_blank" rel="noopener noreferrer" className='text-white hover:text-secondary'>
+              GitHub
+            </a>
+            {" | "}
+            <a href="https://linkedin.com/in/mfmfazrin" target="_blank" rel="noopener noreferrer" className='text-white hover:text-secondary'>
+              LinkedIn
+            </a>
+            {" | "}
+            <a href="https://nirzaf.github.io" target="_blank" rel="noopener noreferrer" className='text-white hover:text-secondary'>
+              Portfolio
+            </a>
+          </div>
+        </div>
 
         <form
           ref={formRef}

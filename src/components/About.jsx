@@ -47,11 +47,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        As a Senior Software Development Specialist at the Primary Health Care Corporation in Qatar, 
+        I develop robust, high-concurrency web applications with a strong focus on delivering seamless 
+        user experiences. With over a decade of experience, I specialize in C#/.NET Core, ASP.NET Core, 
+        Angular, and Azure Cloud Services. My expertise spans microservices architecture, REST APIs, 
+        and modern cloud solutions. I'm passionate about creating scalable solutions and mentoring teams 
+        to deliver high-quality software products.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
