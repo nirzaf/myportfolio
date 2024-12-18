@@ -7,17 +7,18 @@ import { SectionWrapper } from '../hoc';
 
 const TechIcon = ({ tech }) => (
   <div
-    className='w-[70px] h-[70px] rounded-full bg-white/5 backdrop-blur-sm 
-    flex items-center justify-center hover:bg-white/10 transition-all 
-    group relative cursor-pointer'
+    className='w-[70px] h-[70px] rounded-full bg-white/90 backdrop-blur-sm 
+    flex items-center justify-center hover:bg-white transition-all 
+    group relative cursor-pointer shadow-lg hover:shadow-xl
+    border border-chrysler-blue/20'
   >
     <img
       src={tech.icon}
       alt={tech.name}
-      className='w-[45px] h-[45px] object-contain filter brightness-90 group-hover:brightness-100'
+      className='w-[40px] h-[40px] object-contain filter contrast-125'
     />
     <div className='absolute -bottom-10 left-1/2 transform -translate-x-1/2 
-      bg-black/80 text-white px-2 py-1 rounded text-sm opacity-0 
+      bg-black/90 text-white px-2 py-1 rounded text-sm opacity-0 
       group-hover:opacity-100 transition-opacity whitespace-nowrap z-10'>
       {tech.name}
     </div>
@@ -30,7 +31,7 @@ const TechCategory = ({ title, items, index }) => (
     className='w-full'
   >
     <h3 className='text-white font-bold text-[24px] mb-6'>{title}</h3>
-    <div className='flex flex-wrap gap-8 mb-10'>
+    <div className='flex flex-wrap gap-8 mb-10 p-4 rounded-xl bg-black/40 backdrop-blur-sm'>
       {items.map((tech, techIndex) => (
         <TechIcon key={tech.name} tech={tech} />
       ))}
