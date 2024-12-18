@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import TechStack from "./components/TechStack";
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <TechStack />
         <Experience />
         <Tech />
         <Works />
@@ -22,6 +23,6 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

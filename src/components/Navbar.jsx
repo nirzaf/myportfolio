@@ -44,8 +44,8 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Mohamed Fazrin &nbsp;
+            <span className='sm:block hidden'> | Senior Software Development Specialist</span>
           </p>
         </Link>
 
@@ -61,6 +61,12 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+            <a href="https://github.com/nirzaf" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+            <a href="https://linkedin.com/in/mfmfazrin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -91,6 +97,26 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li className='font-poppins font-medium cursor-pointer text-[16px] text-secondary'>
+                <a 
+                  href="https://github.com/nirzaf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  GitHub
+                </a>
+              </li>
+              <li className='font-poppins font-medium cursor-pointer text-[16px] text-secondary'>
+                <a 
+                  href="https://linkedin.com/in/mfmfazrin" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>

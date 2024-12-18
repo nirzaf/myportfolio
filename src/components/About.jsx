@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { backend, creator, mobile, web } from "../assets";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -47,18 +48,35 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        As a Senior Software Development Specialist at the Primary Health Care Corporation in Qatar, 
-        I develop robust, high-concurrency web applications with a strong focus on delivering seamless 
-        user experiences. With over a decade of experience, I specialize in C#/.NET Core, ASP.NET Core, 
-        Angular, and Azure Cloud Services. My expertise spans microservices architecture, REST APIs, 
-        and modern cloud solutions. I'm passionate about creating scalable solutions and mentoring teams 
-        to deliver high-quality software products.
+        With over a decade of experience in software engineering, I specialize in developing 
+        enterprise-level solutions using C#/.NET Core, ASP.NET Core, and Azure Cloud Services. 
+        Currently serving as a Senior Software Development Specialist at Primary Health Care Corporation 
+        in Qatar, I focus on building robust, high-concurrency web applications that deliver exceptional 
+        user experiences. My expertise spans microservices architecture, REST APIs, and modern cloud solutions, 
+        complemented by strong leadership and mentoring abilities.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        <ServiceCard
+          title="Full Stack Development"
+          icon={web}
+          index={0}
+        />
+        <ServiceCard
+          title="Cloud Architecture"
+          icon={backend}
+          index={1}
+        />
+        <ServiceCard
+          title="API Development"
+          icon={mobile}
+          index={2}
+        />
+        <ServiceCard
+          title="DevOps & CI/CD"
+          icon={creator}
+          index={3}
+        />
       </div>
     </>
   );
