@@ -3,7 +3,6 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { backend, creator, mobile, web } from "../assets";
@@ -68,7 +67,7 @@ const About = () => {
           index={1}
         />
         <ServiceCard
-          title="API Development"
+          title="Mobile Development"
           icon={mobile}
           index={2}
         />
