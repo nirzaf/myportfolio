@@ -104,23 +104,23 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Development Specialist",
+    title: "Senior Software Development Specialist",
     company_name: "Primary Health Care Corporation",
-    icon: web,
-    iconBg: "#383E56",
+    icon: "https://ik.imagekit.io/quadrate/Primary-Health-Care-Corporation.png?updatedAt=1733949029677",
+    iconBg: "#FFFFFF",
     date: "July 2022 - Present",
     points: [
-      "Migrated REST APIs to GraphQL and integrated Azure Active Directory for authentication",
-      "Optimized query performance with Azure Redis caching",
-      "Migrated data from SQL Server to FHIR database",
-      "Developed Open API system for third-party service integrations",
+      "Leading development of enterprise-level applications using .NET Core and modern web technologies",
+      "Architecting microservices-based solutions with focus on scalability and performance",
+      "Implementing CI/CD pipelines and DevOps practices",
+      "Mentoring junior developers and conducting code reviews",
     ],
   },
   {
     title: "Senior Full-stack Engineer",
     company_name: "Quadrate Tech Solutions",
-    icon: web,
-    iconBg: "#E6DEDD",
+    icon: "https://ik.imagekit.io/quadrate/QTS%20Logo%20Primary.png?updatedAt=1733854434969",
+    iconBg: "#FFFFFF",
     date: "July 2020 - June 2022",
     points: [
       "Developed and maintained administration module for Hotel ERP SaaS solution",
@@ -132,8 +132,8 @@ const experiences = [
   {
     title: "Dot NET Engineer",
     company_name: "Voigue Private Limited",
-    icon: backend,
-    iconBg: "#383E56",
+    icon: "https://ik.imagekit.io/quadrate/logo-PNG-300x72-1.png?updatedAt=1733949152854",
+    iconBg: "#FFFFFF",
     date: "Nov 2019 - June 2020",
     points: [
       "Developed Backend API with .NET Core for SmartPABX cloud-based phone system",
@@ -145,14 +145,53 @@ const experiences = [
   {
     title: "Associate Full Stack-Engineer",
     company_name: "Virtusa Private Limited",
-    icon: web,
-    iconBg: "#E6DEDD",
+    icon: "https://ik.imagekit.io/quadrate/images.jpeg?updatedAt=1733949236783",
+    iconBg: "#FFFFFF",
     date: "Jan 2019 - October 2019",
     points: [
       "Developed web application for McDonald's Workforce Operations Labor Forecasting",
       "Implemented new features and optimizations",
       "Maintained perfect client scorecards throughout the project",
       "Worked with Angular 6, .NET Core 2.0, and Azure services",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "Nemico Holdings",
+    icon: "https://ik.imagekit.io/quadrate/Nemioc%20Holdings.jpg?updatedAt=1733949381218",
+    iconBg: "#FFFFFF",
+    date: "Jan 2016 - Dec 2018",
+    points: [
+      "Developed and integrated POS system with inventory database for real-time updates",
+      "Implemented cloud-based enterprise inventory management system using ASP.NET (4.8)",
+      "Successfully migrated reporting system from Crystal Reports to iTextSharp",
+      "Utilized C#.NET, Visual Studio 2015, SQL Server 2012, and ASP.NET for development",
+    ],
+  },
+  {
+    title: "Backend Developer",
+    company_name: "Olayan (Saudi Arabia)",
+    icon: "https://ik.imagekit.io/quadrate/download.png?updatedAt=1733949542846",
+    iconBg: "#FFFFFF",
+    date: "June 2012 - July 2015",
+    points: [
+      "Centralized and streamlined the online order-taking process",
+      "Enhanced user experience by implementing real-time notifications using SignalR",
+      "Successfully replaced Box View with PDF.js for improved document handling",
+      "Worked with .NET Framework 4.0, SignalR, ASP.NET Web API, and SQL Server 2008 R2",
+    ],
+  },
+  {
+    title: "Junior Developer",
+    company_name: "QTS Private Limited",
+    icon: "https://ik.imagekit.io/quadrate/QTS-Logo-%20emposed.png?updatedAt=1722424244082",
+    iconBg: "#FFFFFF",
+    date: "Aug 2009 - April 2012",
+    points: [
+      "Developed field service application for LECO Energy's Field Report Writer/Total Maintenance Service",
+      "Successfully reverse-engineered Office Info Path 2003 for enhanced functionality",
+      "Developed and optimized add-ons while maintaining application performance",
+      "Improved team efficiency in feature implementations through streamlined processes",
     ],
   },
 ];

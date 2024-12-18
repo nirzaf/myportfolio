@@ -1,12 +1,7 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -16,12 +11,17 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#000",
         color: "#fff",
+        border: "1px solid rgba(6, 7, 225, 0.1)",
+        boxShadow: "0 4px 16px rgba(6, 7, 225, 0.1)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid rgba(6, 7, 225, 0.1)" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ 
+        background: "#FFFFFF",
+        border: "2px solid #0607E1",
+      }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
@@ -34,10 +34,7 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
+        <p className='text-chrysler-blue text-[16px] font-semibold' style={{ margin: 0 }}>
           {experience.company_name}
         </p>
       </div>
@@ -69,12 +66,9 @@ const Experience = () => {
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+        <VerticalTimeline lineColor="rgba(6, 7, 225, 0.2)">
           {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+            <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
